@@ -1,8 +1,7 @@
 // const assetPrefix = process.env.BUILDING_FOR_NOW ? "/home" : "";
 
 module.exports = {
-  assetPrefix
-  , env: {
+  env: {
     AUTH_SUCCESS_URL: ''
   }
 };
