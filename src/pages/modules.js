@@ -6,7 +6,9 @@ import Container from 'react-bootstrap/Container'
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import api from '../api'
+import api from '@/api'
+import { getAllModules } from '@/api/modules'
+
 
 class Modules extends React.Component {
   constructor(props) {
@@ -71,8 +73,7 @@ class Modules extends React.Component {
 }
 
 export async function getServerSideProps() {
-  const res = await api().get('/modules/list')
-  const data = JSON.parse(JSON.stringify(res.data))
+  const data = await getAllModules()
 
   return {
     props: {

@@ -10,21 +10,17 @@ import FormControl from "react-bootstrap/FormControl";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Badge from "react-bootstrap/Badge";
 import Nav from "react-bootstrap/Nav";
-import api from "../../api";
+import api from "@/api";
+import { getTop5Modules } from "@/api/modules";
 import Head from "next/head";
 
 export default class Header extends React.Component {
   componentDidMount() {
-    api()
-      .get("/modules/list?top=5")
-      .then((response) => {
-        return JSON.parse(JSON.stringify(response.data));
-      })
-      .then((data) => {
-        this.setState({
-          ...data,
-        });
+    getTop5Modules().then((data) => {
+      this.setState({
+        ...data,
       });
+    });
   }
 
   render() {
