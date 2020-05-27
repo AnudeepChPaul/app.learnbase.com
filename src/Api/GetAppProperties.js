@@ -1,4 +1,4 @@
-import api from "@/api/"
+import api from "@/Api/Api"
 
 const getAppProperties = async function () {
   const resp = await api().get("/getAppProperties");

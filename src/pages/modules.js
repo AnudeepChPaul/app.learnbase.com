@@ -6,8 +6,8 @@ import Container from 'react-bootstrap/Container'
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import api from '@/api'
-import { getAllModules } from '@/api/modules'
+import api from '@/Api/Api'
+import { getAllModules } from '@/Api/ModulesApi'
 
 
 class Modules extends React.Component {

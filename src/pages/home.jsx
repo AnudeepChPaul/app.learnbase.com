@@ -1,5 +1,4 @@
-import api from '../api'
-import getAppProperties from '@/api/getAppProperties'
+import getAppProperties from '@/Api/GetAppProperties'
 
 function Home() {
   return (

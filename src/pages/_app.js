@@ -1,8 +1,8 @@
 import './app.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import App from 'next/app'
-import MainLayout from './../layouts/Main/MainLayout'
-import api from '../api'
+import MainLayout from '@/Layouts/Main/MainLayout'
+import api from '@/Api/Api'
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
@@ -17,7 +17,7 @@ export default class MyApp extends App {
   }
 
   render() {
-    const { Component, pageProps } = this.props
+    const { Component, pageProps } = this.props;
 
     return (
       <MainLayout {...pageProps.appProps}>
