@@ -119,10 +119,10 @@ export default class Header extends React.Component {
                             </Dropdown>
                         </Nav>
                         <Nav className="ml-auto mr-2">
-                            <Link href="/login" as="/login">
-                                <Nav.Link href="" onClick={() => window.location = core.env.AUTH_PAGE_URL}>Login/Sign
-                                    Up</Nav.Link>
-                            </Link>
+                            {/*<Link href="/login" as="/login">*/}
+                            <Nav.Link href="" onClick={() => window.location = core.env.AUTH_PAGE_URL}>Login/Sign
+                                Up</Nav.Link>
+                            {/*</Link>*/}
                         </Nav>
                     </Navbar>
                 </div>
