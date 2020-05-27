@@ -1,7 +1,13 @@
-// const assetPrefix = process.env.BUILDING_FOR_NOW ? "/home" : "";
+// const assetPrefix = prod ? "/login" : "";
+
+const prod = process.env.NODE_ENV === "production";
 
 module.exports = {
+  assetPrefix: prod ? `` : "",
+  publicRuntimeConfig: {
+    staticFolder: prod ? "" : "",
+  },
   env: {
-    AUTH_SUCCESS_URL: ''
+    staticFolder: prod ? "" : "",
   }
 };

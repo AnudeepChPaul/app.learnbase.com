@@ -5,8 +5,7 @@
       "@/*": ["src/*"],
       "@components/*": ["src/components/*"],
       "@api/*": ["src/api/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@core": ["src/../../core.learnbase.com"]
+      "@layouts/*": ["src/layouts/*"]
     }
   }
 }

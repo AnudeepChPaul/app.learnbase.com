@@ -7,13 +7,15 @@
     "build": "next build",
     "export": "next build && next export",
     "start": "next start",
-    "clear_node_modules": "rm -rf ./node_modules"
+    "clear_node_modules": "rm -rf ./node_modules",
+    "add-deps": "yarn add https://github.com/AnudeepChPaul/core.learnbase.com.git"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "axios": "^0.19.2",
     "babel-plugin-module-resolver": "^4.0.0",
     "bootstrap": "^4.5.0",
+    "core.learnbase.com": "https://github.com/AnudeepChPaul/core.learnbase.com.git",
     "next": "9.4.2",
     "react": "16.13.1",
     "react-bootstrap": "^1.0.1",

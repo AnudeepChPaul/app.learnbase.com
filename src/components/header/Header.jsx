@@ -13,7 +13,7 @@ import Nav from "react-bootstrap/Nav";
 import api from "@/api";
 import { getTop5Modules } from "@/api/modules";
 import Head from "next/head";
-import core from '@core'
+import core from 'core.learnbase.com'
 
 export default class Header extends React.Component {
   componentDidMount() {
