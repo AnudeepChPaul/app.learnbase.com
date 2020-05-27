@@ -13,6 +13,7 @@ import Nav from "react-bootstrap/Nav";
 import api from "@/api";
 import { getTop5Modules } from "@/api/modules";
 import Head from "next/head";
+import core from '@core'
 
 export default class Header extends React.Component {
   componentDidMount() {
@@ -113,7 +114,7 @@ export default class Header extends React.Component {
             </Nav>
             <Nav className="ml-auto mr-2">
               <Link href="/login" as="/login">
-                <Nav.Link href="/login">Login/Sign Up</Nav.Link>
+                <Nav.Link href="" onClick={() => window.location = core.env.AUTH_PAGE_URL}>Login/Sign Up</Nav.Link>
               </Link>
             </Nav>
           </Navbar>
