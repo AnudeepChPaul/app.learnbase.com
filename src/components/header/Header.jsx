@@ -79,6 +79,7 @@ export default class Header extends React.Component {
                                                         this.state.modules.baseUrl + eachModule.scheme
                                                     }
                                                     key={index}
+                                                    prefetch
                                                 >
                                                     <Dropdown.Item
                                                         href={this.state.modules.baseUrl + eachModule.url}
@@ -111,7 +112,7 @@ export default class Header extends React.Component {
                                             </Dropdown.Item>
                                         </Link>
                                     ) : (
-                                        <Link href="/modules" as="/modules">
+                                        <Link href="/modules" as="/modules" prefetch>
                                             <Dropdown.Item href="/modules">All Modules</Dropdown.Item>
                                         </Link>
                                     )}
