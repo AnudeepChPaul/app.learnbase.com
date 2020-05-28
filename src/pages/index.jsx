@@ -1,4 +1,5 @@
 import api from '@/Api/Api'
+import getAppProperties from "@/Api/GetAppProperties";
 
 function Home() {
   return (
@@ -9,8 +10,7 @@ function Home() {
 }
 
 export async function getServerSideProps() {
-  const res = await api().get('/getAppProperties')
-  const appProps = JSON.parse(JSON.stringify(res.data))
+  const appProps = await getAppProperties()
 
   return {
     props: {

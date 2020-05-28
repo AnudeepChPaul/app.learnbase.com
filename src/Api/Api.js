@@ -10,7 +10,7 @@ const Api = () => {
 
   console.log(environment)
   return axios.create({
-    baseURL: environment.isProdMode() ? prodBaseHerokuUrl : devBaseUrl
+    baseURL: environment.isProdMode() ? prodBaseHerokuUrl : prodBaseHerokuUrl
     , timeout: 10000
   })
 }
