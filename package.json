@@ -9,7 +9,7 @@
 		"export": "next build && next export",
 		"start": "next start",
 		"clear_node_modules": "rm -rf ./node_modules",
-		"heroku-postbuild": "npm run build"
+		"heroku-postbuild": "yarn run build"
 	},
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "^5.13.0",
