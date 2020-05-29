@@ -1,3 +1,5 @@
 module.exports = {
-    env: {}
+    env: {
+        AUTH_PAGE_URL: null
+    }
 };
