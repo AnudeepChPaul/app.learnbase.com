@@ -7,10 +7,10 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Badge from "react-bootstrap/Badge";
-import Fade from "react-bootstrap/Fade";
 import Nav from "react-bootstrap/Nav";
 import {getTop5Modules} from "@/Api/ModulesApi";
 import Head from "next/head";
+import environment from '@/Helpers/environment'
 
 export default class Header extends React.Component {
 
@@ -121,7 +121,7 @@ export default class Header extends React.Component {
                         </Nav>
                         <Nav className="ml-auto mr-2">
                             {/*<Link href="/login" as="/login">*/}
-                            <Nav.Link href="" onClick={() => window.location = core.env.AUTH_PAGE_URL}>Login/Sign
+                            <Nav.Link href="" onClick={() => window.location = environment.getAuthPageUrl() }>Login/Sign
                                 Up</Nav.Link>
                             {/*</Link>*/}
                         </Nav>
